@@ -1,0 +1,4 @@
+use school;
+#SELECT hostelname from hostel where(hostelid=( select hostelid from student where idstudent=102));
+#select hostelname from hostel join student where( student.hostelid=hostel.hostelid and student.idstudent=102);
+select * from hostel join student where(student.hostelid=hostel.hostelid and student.idstudent=103);
